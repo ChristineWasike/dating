@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:dating/models/models.dart';
 import 'package:dating/widgets/widgets.dart';
 
+// Stores individual user cards displayed on the home screen
 class UserCard extends StatelessWidget {
   const UserCard({
     Key? key,

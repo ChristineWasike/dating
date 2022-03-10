@@ -26,9 +26,11 @@ class UsersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          iconTheme: const IconThemeData(
+            color: Colors.black, //change your color here
+          )),
       extendBodyBehindAppBar: true,
       body: ListView(
         shrinkWrap: true,
@@ -99,9 +101,9 @@ class UsersScreen extends StatelessWidget {
                                       print('Swiped Left');
                                     },
                                     child: const ChoiceButton(
-                                      width: 80,
-                                      height: 80,
-                                      size: 30,
+                                      width: 60,
+                                      height: 60,
+                                      size: 25,
                                       color: Colors.white,
                                       hasGradient: true,
                                       icon: Icons.favorite,
@@ -109,7 +111,7 @@ class UsersScreen extends StatelessWidget {
                                   ),
                                   ChoiceButton(
                                     color: Theme.of(context).primaryColor,
-                                    icon: Icons.watch_later,
+                                    icon: Icons.bookmark,
                                   ),
                                 ],
                               );
@@ -156,12 +158,14 @@ class UsersScreen extends StatelessWidget {
                                     const EdgeInsets.only(top: 5.0, right: 5.0),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8.0),
-                                  gradient: LinearGradient(
-                                    colors: [
-                                      Theme.of(context).primaryColor,
+                                  color:
                                       Theme.of(context).colorScheme.secondary,
-                                    ],
-                                  ),
+                                  // gradient: LinearGradient(
+                                  //   colors: [
+                                  //     Theme.of(context).primaryColor,
+                                  //     Theme.of(context).colorScheme.secondary,
+                                  //   ],
+                                  // ),
                                 ),
                                 child: Text(
                                   interest,

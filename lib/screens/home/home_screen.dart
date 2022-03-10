@@ -80,9 +80,9 @@ class HomeScreen extends StatelessWidget {
                           print('Swiped Left');
                         },
                         child: const ChoiceButton(
-                          width: 80,
-                          height: 80,
-                          size: 30,
+                          width: 60,
+                          height: 60,
+                          size: 25,
                           color: Colors.white,
                           hasGradient: true,
                           icon: Icons.favorite,
@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       ChoiceButton(
                         color: Theme.of(context).primaryColor,
-                        icon: Icons.watch_later,
+                        icon: Icons.bookmark
                       ),
                     ],
                   ),

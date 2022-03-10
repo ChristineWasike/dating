@@ -8,7 +8,7 @@ ThemeData theme(BuildContext context) {
     primaryColor: const Color(0xFF2B2E4A),
     scaffoldBackgroundColor: Colors.white,
     backgroundColor: const Color(0xFFF4F4F4),
-    textTheme: GoogleFonts.poppinsTextTheme(
+    textTheme: GoogleFonts.workSansTextTheme(
       textTheme.copyWith(
         headline1: const TextStyle(
           color: Color(0xFF2B2E4A),
@@ -53,6 +53,6 @@ ThemeData theme(BuildContext context) {
       ),
     ),
     colorScheme:
-        ColorScheme.fromSwatch().copyWith(secondary: const Color(0xFFE84545)),
+        ColorScheme.fromSwatch().copyWith(secondary: const Color.fromARGB(255, 99, 95, 96)),
   );
 }

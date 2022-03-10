@@ -38,7 +38,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
               title,
               style: Theme.of(context)
                   .textTheme
-                  .headline2!
+                  .headline3!
                   .copyWith(color: Theme.of(context).primaryColor),
             ),
           ),
@@ -47,7 +47,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
       actions: hasActions
           ? [
               IconButton(
-                  icon: Icon(Icons.message,
+                  icon: Icon(Icons.people_alt,
                       color: Theme.of(context).primaryColor),
                   onPressed: () {
                     Navigator.pushNamed(context, '/matches');
