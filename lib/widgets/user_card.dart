@@ -27,19 +27,19 @@ class UserCard extends StatelessWidget {
                     fit: BoxFit.cover,
                     image: NetworkImage(user.imageUrls[0]),
                   ),
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  borderRadius: const BorderRadius.all(Radius.circular(8.0)),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.5),
                       spreadRadius: 4,
                       blurRadius: 4,
-                      offset: Offset(3, 3),
+                      offset: const Offset(3, 3),
                     )
                   ],
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(8.0)),
                   gradient: LinearGradient(
                     colors: [
@@ -75,7 +75,7 @@ class UserCard extends StatelessWidget {
                         UserImageSmall(url: user.imageUrls[2]),
                         UserImageSmall(url: user.imageUrls[3]),
                         UserImageSmall(url: user.imageUrls[4]),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Container(
                           width: 35,
                           height: 35,
@@ -84,7 +84,7 @@ class UserCard extends StatelessWidget {
                             size: 25,
                             color: Theme.of(context).primaryColor,
                           ),
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.white,
                           ),

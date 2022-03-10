@@ -26,11 +26,9 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
               onTap: () {
                 Navigator.popAndPushNamed(context, '/');
               },
-              child: Container(
-                child: SvgPicture.asset(
-                  'assets/logo.svg',
-                  height: 50,
-                ),
+              child: SvgPicture.asset(
+                'assets/logo.png',
+                height: 50,
               ),
             ),
           ),

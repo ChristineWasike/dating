@@ -38,7 +38,7 @@ class CustomImageContainer extends StatelessWidget {
           child: IconButton(
             icon: Icon(
               Icons.add_circle,
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
             ),
             onPressed: () {},
           ),

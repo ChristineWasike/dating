@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             return Column(
               children: [
                 InkWell(
-                  onDoubleTap: () {
+                  onTap: () {
                     Navigator.pushNamed(context, '/users',
                         arguments: state.users[0]);
                   },

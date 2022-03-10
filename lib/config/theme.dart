@@ -41,7 +41,7 @@ ThemeData theme(BuildContext context) {
           fontSize: 14,
         ),
         bodyText1: const TextStyle(
-          color: const Color(0xFF2B2E4A),
+          color: Color(0xFF2B2E4A),
           fontWeight: FontWeight.normal,
           fontSize: 12,
         ),
