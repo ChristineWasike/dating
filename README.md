@@ -39,6 +39,7 @@ The apk can be directly retrieved from [here](https://drive.google.com/drive/fol
 
 
 Note:
+- Tap the user cardonce to view user details.
 - There is a bug in the array of swiped users that thorws an exeption once the list of available users is exhausted.
 - Most of the larger text in form of prose is lorem ipsum but demostrates the proof of concept.
 
