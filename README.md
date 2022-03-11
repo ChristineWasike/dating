@@ -30,8 +30,17 @@ path/to/project> flutter run
 
 ## Build Release Version
 ```
-run: flutter build <OS PLATFORM> e.g flutter build ios --release
+run: flutter build <OS PLATFORM> 
+e.g flutter build ios --release
+e.g flutter build apk --split-per-abi
 ```
+
+The apk can be directly retrieved from [here](https://drive.google.com/drive/folders/1BwQJ9pyiHNjXu5JzZ6Q9RY6TXR0289fS?usp=sharing).
+
+
+Note:
+- There is a bug in the array of swiped users that thorws an exeption once the list of available users is exhausted.
+- Most of the larger text in form of prose is lorem ipsum but demostrates the proof of concept.
 
 A few resources to get you started if this is your first Flutter project:
 
