@@ -116,7 +116,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                     const TitleWithIcon(title: 'Location', icon: Icons.edit),
                     Text(
-                      'Singapore, 1 Suntec City',
+                      'Nairobi, Kenya',
                       style: Theme.of(context)
                           .textTheme
                           .bodyText1!
@@ -162,6 +162,7 @@ class TitleWithIcon extends StatelessWidget {
         ),
         IconButton(
           icon: Icon(icon),
+          iconSize: 12.0,
           onPressed: () {},
         ),
       ],
