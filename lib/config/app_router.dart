@@ -1,3 +1,4 @@
+import 'package:dating/authentication/authenticate.dart';
 import 'package:flutter/material.dart';
 import 'package:dating/models/models.dart';
 import 'package:dating/screens/screens.dart';
@@ -17,6 +18,8 @@ class AppRouter {
         return MatchesScreen.route();
       case ProfileScreen.routeName:
         return ProfileScreen.route();
+      case Authenticate.routeName:
+        return Authenticate.route();
       default:
         return _errorRoute();
     }

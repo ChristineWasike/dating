@@ -1,6 +1,7 @@
+import 'package:dating/authentication/authenticate.dart';
 import 'package:dating/config/theme.dart';
 // import 'package:dating/repositories/auth/auth_repository.dart';
-import 'package:dating/screens/home/home_screen.dart';
+// import 'package:dating/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 // import 'blocs/auth/auth_bloc.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: theme(context),
         onGenerateRoute: AppRouter.onGenerateRoute,
-        initialRoute: HomeScreen.routeName,
+        initialRoute: Authenticate.routeName,
       ),
     );
   }

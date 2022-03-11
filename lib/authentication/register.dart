@@ -1,5 +1,5 @@
+import 'package:dating/screens/screens.dart';
 import 'package:flutter/material.dart';
-import 'package:dating/main.dart';
 import 'package:dating/shared/loading.dart';
 
 class Register extends StatefulWidget {
@@ -148,7 +148,7 @@ class _RegisterState extends State<Register> {
                                   if (_formKey.currentState!.validate()) {
                                     setState(() => loading = true);
                                   }
-                                  const MyHomePage();
+                                  const HomeScreen();
                                 }),
                           ),
                           const SizedBox(height: 12.0),

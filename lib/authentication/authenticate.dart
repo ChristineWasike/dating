@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:dating/screens/authentication/register.dart';
-import 'package:dating/screens/authentication/signin.dart';
+import 'package:dating/authentication/register.dart';
+import 'package:dating/authentication/signin.dart';
 // import '../onboarding/onboard.dart';
 
 class Authenticate extends StatefulWidget {
   const Authenticate({Key? key}) : super(key: key);
+  static const String routeName = '/authenticate';
+
+  static Route route() {
+    return MaterialPageRoute(
+      settings: const RouteSettings(name: routeName),
+      builder: (context) => const Authenticate(),
+    );
+  }
 
   @override
   _AuthenticateState createState() => _AuthenticateState();

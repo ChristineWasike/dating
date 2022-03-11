@@ -71,7 +71,7 @@ class _PassionsState extends State<Passions> {
               wrapped: true,
             ),
             const SizedBox(
-              height: 100,
+              height: 20,
             ),
             ElevatedButton(
               onPressed: () {

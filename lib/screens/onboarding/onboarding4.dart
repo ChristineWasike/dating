@@ -1,6 +1,6 @@
 import 'package:chips_choice_null_safety/chips_choice_null_safety.dart';
+import 'package:dating/screens/screens.dart';
 import 'package:flutter/material.dart';
-import 'package:dating/main.dart';
 
 class Personality extends StatefulWidget {
   const Personality({Key? key}) : super(key: key);
@@ -31,20 +31,20 @@ class _PersonalityState extends State<Personality> {
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: ListView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           children: <Widget>[
-            Text(
+            const Text(
               "Personality Traits",
               style: TextStyle(fontSize: 24.0),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               "Your personality.",
               style: TextStyle(fontSize: 16.0),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ChipsChoice<String>.multiple(
@@ -52,22 +52,22 @@ class _PersonalityState extends State<Personality> {
               onChanged: (val) => setState(() => tags = val),
               choiceItems: C2Choice.listFrom<String, String>(
                   source: options, value: (i, v) => v, label: (i, v) => v),
-              choiceStyle: C2ChoiceStyle(
+              choiceStyle: const C2ChoiceStyle(
                 color: Colors.black,
               ),
               wrapped: true,
             ),
-            SizedBox(
-              height: 200,
+            const SizedBox(
+              height: 40,
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const MyHomePage()));
+                        builder: (context) => const HomeScreen()));
               },
-              child: Text("Continue"),
+              child: const Text("Continue"),
               style: ButtonStyle(
                   backgroundColor:
                       MaterialStateProperty.all(const Color(0xff000000))),
