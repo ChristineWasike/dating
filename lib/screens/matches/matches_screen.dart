@@ -30,7 +30,7 @@ class MatchesScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Your Likes', style: Theme.of(context).textTheme.headline4),
+              Text('Your Matches', style: Theme.of(context).textTheme.headline4),
               SizedBox(
                 height: 100,
                 child: ListView.builder(
@@ -55,49 +55,8 @@ class MatchesScreen extends StatelessWidget {
                     }),
               ),
               const SizedBox(height: 10),
-              Text(
-                'Your Chats',
-                style: Theme.of(context).textTheme.headline4,
-              ),
-              ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: activeMatches.length,
-                  itemBuilder: (context, index) {
-                    return InkWell(
-                      onTap: () {
-                        Navigator.pushNamed(context, '/chat',
-                            arguments: activeMatches[index]);
-                      },
-                      child: Row(
-                        children: [
-                          UserImageSmall(
-                            height: 70,
-                            width: 70,
-                            url: activeMatches[index].matchedUser.imageUrls[0],
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                activeMatches[index].matchedUser.name,
-                                style: Theme.of(context).textTheme.headline5,
-                              ),
-                              const SizedBox(height: 5),
-                              Text(
-                                activeMatches[index].matchedUser.name,
-                                style: Theme.of(context).textTheme.headline6,
-                              ),
-                              const SizedBox(height: 5),
-                              Text(
-                                activeMatches[index].matchedUser.name,
-                                style: Theme.of(context).textTheme.bodyText1,
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    );
-                  })
+              
+             
             ],
           ),
         ),
