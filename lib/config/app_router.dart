@@ -1,9 +1,6 @@
-import 'package:dating/authentication/authenticate.dart';
 import 'package:flutter/material.dart';
 import 'package:dating/models/models.dart';
 import 'package:dating/screens/screens.dart';
-
-import '../screens/screens.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {
